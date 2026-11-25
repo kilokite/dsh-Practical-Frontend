@@ -21,7 +21,7 @@
  */
 
 window.__ModuleLoader__.load({
-  id: '@local/dsh-practical-frontend',
+  id: 'dsh-practical-frontend',
   factory(require) {
     const React = require('react');
     const primitives = require('@deepseek-ai/dsh-client-ui-primitives');

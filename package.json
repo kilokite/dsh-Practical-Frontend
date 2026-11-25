@@ -1,8 +1,28 @@
 {
-  "name": "@local/dsh-practical-frontend",
+  "name": "dsh-practical-frontend",
   "version": "0.3.0",
-  "private": true,
   "description": "Practical front-end tweaks for DeepSeek Harness: tint workspace rows and bookmark conversation excerpts with in-place highlighting.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "workspace",
+    "bookmark",
+    "highlight"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "kilokite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kilokite/dsh-Practical-Frontend.git"
+  },
+  "homepage": "https://github.com/kilokite/dsh-Practical-Frontend#readme",
+  "bugs": {
+    "url": "https://github.com/kilokite/dsh-Practical-Frontend/issues"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js",
@@ -17,9 +37,12 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
+  "icon": "./icon.svg",
   "dsh": {
+    "manifestVersion": 1,
     "bundle": { "patch": "./cordis.patch.yml" },
     "client": {
       "platform": "web",
@@ -33,5 +56,8 @@
         "@deepseek-ai/dsh-api-workspace-controller"
       ]
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
