@@ -1,8 +1,8 @@
 {
   "name": "@local/dsh-practical-frontend",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
-  "description": "Practical front-end tweaks for DeepSeek Harness: tint workspace rows in the sidebar.",
+  "description": "Practical front-end tweaks for DeepSeek Harness: tint workspace rows and bookmark conversation excerpts with in-place highlighting.",
   "type": "module",
   "exports": {
     ".": "./index.js",
@@ -26,7 +26,11 @@
       "immediately": true,
       "inject": [
         "@deepseek-ai/dsh-client-locale",
-        "@deepseek-ai/dsh-client-ui-layout"
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-workspace-controller"
       ]
     }
   }

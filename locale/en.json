@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Practical Frontend Tweaks",
-    "description": "Tint workspace rows in the sidebar so projects stay easy to tell apart."
+    "description": "Tint workspace rows and bookmark conversation excerpts, grouped by project and highlighted in place."
   }
 }
